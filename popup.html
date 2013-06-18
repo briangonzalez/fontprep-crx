@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FontPrep Chrome Extension</title>
+    <script src="js/jquery-fontprep.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  
+  <body>   
+    <div class='overlay'></div> 
+    <div class='overlay-text'>Please start FontPrep</div> 
+    
+    <div class='logo-wrap'>
+      <img src="images/icon128.png">  
+    </div>
+    
+    <h1>FontPrep Extension</h1>
+    <h2 class='error'></h2>
+
+    <input placeholder="font id"        class='font-id'>
+    <input placeholder="css selector"   class='selector'>
+    <a href="#" class='button apply'>Apply</a>
+
+    <ul class="applied-list">
+
+      <li>
+        <span class='left'>Selector</span>
+        <span class='right'>Font Family</span>
+      </li>
+
+    </ul>
+
+  </body>
+
+</html>
+

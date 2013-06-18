@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,900,300italic);
+
+body {
+  min-width: 357px;
+  overflow-x: hidden;
+  font-family: Lato;
+  background: #f6f6f6;
+  color: #333;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.logo-wrap { text-align: center; }
+.logo-wrap img{
+  display: inline-block;
+  width: 70px;
+  margin-top: 10px;
+}
+
+h1{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+h2.error{
+  color: red;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+h2.error.shown { opacity: 1 }
+
+
+a.button {
+  width: 100%;
+  padding: 12px;
+  display: inline-block;
+  background: #47aed6;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 0 #3b90b1;
+  transition: all 200ms ease;
+}
+
+a.button:hover    { background: #4ab7e0 }
+a.button:active   { box-shadow: 0 0 0; -webkit-transform: translateY(2px);}
+
+input{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #999;
+  font-weight: 300;
+  font-style: italic;
+  border-radius: 2px;
+}
+
+::-webkit-input-placeholder {
+   font-family: Lato;
+   color: #333;
+   letter-spacing: 2px;
+}
+
+input:focus, input:hover  { border-color: #888; }
+input, a                  { margin-top: 10px; }
+
+.overlay{
+  position: fixed;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background: white;
+  opacity: 0.95;
+  z-index: 10;
+  display: none;
+}
+
+.overlay-text{
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+  z-index: 20;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin-top: 70px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: none;
+}
+
+ul.applied-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 11px;
+  display: none;
+}
+
+ul.applied-list.shown { display: block }
+
+ul.applied-list li              { padding: 6px; border-top: 1px solid #f1f1f1; font-weight: 300; }
+ul.applied-list li:first-child  { font-weight: 900; text-transform: uppercase; border-top: 0; background: #eee; font-style: italic; }
+ul.applied-list li:after {   
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+ul.applied-list li .right,
+ul.applied-list li .left    { font-weight: bold }
+ul.applied-list li .right   { float: right }
+ul.applied-list li .left    { float: left }
+
+
+
+
