@@ -29,6 +29,20 @@ h1{
   margin: 0;
 }
 
+h1 a.learn-more{
+  font-weight: bold;
+  background: #eee;
+  padding: 2px 5px 2px 8px;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  color: #666;
+  vertical-align: middle;
+  margin-right: -13px;
+  margin-top: -5px;
+}
+
 h2.error{
   color: red;
   font-weight: 300;
@@ -86,7 +100,7 @@ input, a                  { margin-top: 10px; }
   position: fixed;
   top: 0; right: 0; left: 0; bottom: 0;
   background: white;
-  opacity: 0.95;
+  opacity: 1;
   z-index: 10;
   display: none;
 }
@@ -98,7 +112,7 @@ input, a                  { margin-top: 10px; }
   z-index: 20;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  margin-top: 70px;
+  margin-top: 120px;
   text-transform: uppercase;
   letter-spacing: 4px;
   display: none;

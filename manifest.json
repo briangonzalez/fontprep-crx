@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "FontPrep",
+  "name": "FontPrep Extension",
   "description": "An extension for embedding FontPrep's fonts (http://fontprep.com) into any webpage.",
-  "version": "0.1",
+  "version": "0.1.1",
   "browser_action": {
     "default_icon": "images/icon.png",
     "default_popup": "popup.html"
